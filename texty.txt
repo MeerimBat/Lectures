@@ -1,0 +1,3 @@
+Sal solves percent word problems involving new tax, tip, and discounts.
+PS C:\Users\Meerim\Desktop\CS> (Get-Content texty.txt) -replace 'old-text', 'new-text' | Set-Content texty.txt
+PS C:\Users\Meerim\Desktop\CS> (Get-Content texty.txt) -replace 'old','new' | Set-Content texty.txt
