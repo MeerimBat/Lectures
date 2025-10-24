@@ -1,0 +1,39 @@
+PS C:\Users\Meerim> pwd
+
+Path
+----
+C:\Users\Meerim
+
+
+PS C:\Users\Meerim> mkdir  C:\Users\Meerim\Desktop\CSHW\
+
+
+    Directory: C:\Users\Meerim\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10/24/2025  10:40 AM                CSHW
+
+PS C:\Users\Meerim> cd
+PS C:\Users\Meerim> cd  C:\Users\Meerim\Desktop\CSHW\
+PS C:\Users\Meerim\Desktop\CSHW> New-Item "HW1.text"
+
+
+    Directory: C:\Users\Meerim\Desktop\CSHW
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/24/2025  10:46 AM              0 HW1.text
+
+PS C:\Users\Meerim\Desktop\CSHW> $url = "https://www.bbc.com/news"
+PS C:\Users\Meerim\Desktop\CSHW> $response = Invoke-WebRequest -Uri $url
+PS C:\Users\Meerim\Desktop\CSHW> $htmlContent = $response.Content
+PS C:\Users\Meerim\Desktop\CSHW> Write-Output "Extracted Title: $titleText"
+Extracted Title:
+PS C:\Users\Meerim\Desktop\CSHW> "HW1.text"
+
+PS C:\Users\Meerim\Desktop\CSHW> (Get-Content HW1.text)-replace  "climate","Mamba"| Set-Content HW1.text
+PS C:\Users\Meerim\Desktop\CSHW>
+
