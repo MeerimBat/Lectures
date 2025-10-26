@@ -1,0 +1,9 @@
+bill_amount = float(input("enter the amount: $"))
+tip_percentage = float(input("Enter the tip percentage: "))
+tip_amount = bill_amount * (tip_percentage / 100)
+total_bill = bill_amount + tip_amount
+print(f"\nTip amount: ${tip_amount:.2f}")
+print(f"Total bill (including tip): ${total_bill:.2f}")
+
+if tip_percentage >=20:
+    print("Thank you very much!")
