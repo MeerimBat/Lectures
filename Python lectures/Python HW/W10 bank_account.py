@@ -11,7 +11,7 @@ class bank_account:
           self.balance += amount 
           print(f"deposited $ {amount}. new_balance: $ {self.balance}")
        else: 
-          print("Deposit amount must be positive! Don't try to cheat!")
+          print("Deposit amount must be positive!")
     
     def withdrawal(self, amount):
        if amount > 0:
@@ -19,7 +19,7 @@ class bank_account:
              self.balance -= amount
              print(f"withdrawal ${amount}. new_balance: $ {self.balance}")
           else: 
-             print("Not enough funds, try some other ATM")
+             print("Not enough funds :(")
                    
     
     #def new_balance(self):
