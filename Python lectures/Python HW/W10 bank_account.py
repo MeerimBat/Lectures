@@ -1,17 +1,18 @@
 class bank_account: 
 
-    def __init__(self, account_owner,balance,deposit, withdrawal,):
+    def __init__(self, account_owner,balance=0):
         self.account_owner = account_owner
         self.balance = balance
-        self.deposit = deposit
-        self.withdrawal = withdrawal
-
+   
     def deposit(self, amount):
        if amount > 0:
           self.balance += amount 
           print(f"deposited $ {amount}. new_balance: $ {self.balance}")
        else: 
           print("Deposit amount must be positive!")
+      
+    def get_balance(self):
+          return f"Current Balance: ${self.balance}"
     
     def withdrawal(self, amount):
        if amount > 0:
@@ -21,16 +22,20 @@ class bank_account:
           else: 
              print("Not enough funds :(")
                    
-    
+    def display_account_details(self):
+        print(f"Account Owner: {self.account_owner}")
+        print(f"Balance: ${self.balance}")
     #def new_balance(self):
         
     
-    def display_info(self):
-        print(f"{self.account_owner} {self.balance} {self.deposit} {self.withdrawal}")
+    #def display_info(self):
+        #print(f"{self.account_owner} {self.balance} {self.deposit} {self.withdrawal}")
 
      
-#my_account = bank_account("Batman", 10000)
-#print("-" * 20)
+my_account = bank_account("Batman", 10000)
+
+my_account.display_account_details()
+print("-" * 20)
 #my_account.deposit(2000)
 #my_account.withdrawal(5000)
 #my_account.display_info()
