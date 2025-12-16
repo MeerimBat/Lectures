@@ -1,6 +1,6 @@
 class bank_account: 
 
-    def __init__(self, account_owner,balance=0):
+    def __init__(self, account_owner,balance):
         self.account_owner = account_owner
         self.balance = balance
    
@@ -25,27 +25,19 @@ class bank_account:
     def display_account_details(self):
         print(f"Account Owner: {self.account_owner}")
         print(f"Balance: ${self.balance}")
-    #def new_balance(self):
-        
-    
-    #def display_info(self):
-        #print(f"{self.account_owner} {self.balance} {self.deposit} {self.withdrawal}")
-
      
 my_account = bank_account("Batman", 10000)
-
+my_account = bank_account("Spiderman", 3000)
 my_account.display_account_details()
-print("-" * 20)
-#my_account.deposit(2000)
-#my_account.withdrawal(5000)
-#my_account.display_info()
-#print("-" * 20) 
+my_account.deposit(3000)
+print(my_account.get_balance())
+my_account.withdrawal(5000)
+print(my_account.get_balance())
+
 
 #p1 = bank_account ("Batman",10000,2000,5000)
 #p2 = bank_account ("Spiderman",20000, 3000,4000)  
 #p3 = bank_account ("Catwoman", 50000, 5000, 20000) 
 
-#p1.display_info()
-#p2.display_info()
-#p3.display_info()
+
                                              

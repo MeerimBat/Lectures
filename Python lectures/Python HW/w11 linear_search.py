@@ -12,7 +12,7 @@ result = linear_search(my_list,x)
 if result != -1:
    print ("The number is found", result)
 else:
-   print ("The numer is not found!")
+   print ("The number is not found!")
 
 my_list_fruits =["banana","orange","kiwi","apple"] 
 x = "orange"
@@ -22,7 +22,7 @@ result = linear_search(my_list_fruits,x)
 if result != -1:
    print ("The number is found", result)
 else:
-   print ("The numer is not found!")
+   print ("The number is not found!")
 
 my_list_birthyear =[1960, 1988,2003,2009,2015] 
 x = 2020
@@ -32,6 +32,6 @@ result = linear_search(my_list_birthyear,x)
 if result != -1:
    print ("The number is found", result)
 else:
-   print ("The numer is not found!")
+   print ("The number is not found!")
 
         
