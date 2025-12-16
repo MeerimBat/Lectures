@@ -27,11 +27,17 @@ class bank_account:
         print(f"Balance: ${self.balance}")
      
 my_account = bank_account("Batman", 10000)
+my_account.display_account_details()
+my_account.deposit(2000)
+print(my_account.get_balance())
+my_account.withdrawal(5000)
+print(my_account.get_balance())
+
 my_account = bank_account("Spiderman", 3000)
 my_account.display_account_details()
 my_account.deposit(3000)
 print(my_account.get_balance())
-my_account.withdrawal(5000)
+my_account.withdrawal(7000)
 print(my_account.get_balance())
 
 
