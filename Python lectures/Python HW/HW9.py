@@ -1,0 +1,23 @@
+import random
+
+def roll_dice():
+    # Simulate rolling two dice
+    dice_1 = random.randint(1, 6)
+    dice_2 = random.randint(1, 6)
+    return dice_1, dice_2
+
+def main():
+    print("Welcome to the Double Dice Rolling Simulator!")
+    while True:
+        input("Press Enter to roll the dice (or type 'q' to quit): ").strip().lower()
+        if input == 'q':
+            print("Thanks for playing! Goodbye!")
+            break
+        dice_1, dice_2 = roll_dice()
+        print(f"You rolled: {dice_1} and {dice_2}")
+        print(f"Total: {dice_1 + dice_2}\n")
+
+if __name__ == "__main__":
+    main()
+
+
