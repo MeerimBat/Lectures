@@ -17,7 +17,27 @@ def main():
         print(f"You rolled: {dice_1} and {dice_2}")
         print(f"Total: {dice_1 + dice_2}\n")
 
+    dict_frequency = {i: 0 for i in range(2, 13)}
+    print(dict_frequency)
+    for i in range(roll_dice):
+        rolling_result = roll_dice()
+        dict_frequency[rolling_result]+=1
+    return dict_frequency
+
+print(main())
+freq = {}
+for item in ():
+    freq[item] = freq.get(item, 0) + 1
+
+print(freq)
+
 if __name__ == "__main__":
     main()
 
+# a = ['apple', 'banana', 'apple', 'orange', 'banana', 'banana']
 
+freq = {}
+for item in a:
+    freq[item] = freq.get(item, 0) + 1
+
+print(freq)
