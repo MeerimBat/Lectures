@@ -25,19 +25,8 @@ def main():
     return dict_frequency
 
 print(main())
-freq = {}
-for item in ():
-    freq[item] = freq.get(item, 0) + 1
 
-print(freq)
 
-if __name__ == "__main__":
-    main()
+#if __name__ == "__main__":
+   # main()
 
-# a = ['apple', 'banana', 'apple', 'orange', 'banana', 'banana']
-
-freq = {}
-for item in a:
-    freq[item] = freq.get(item, 0) + 1
-
-print(freq)
