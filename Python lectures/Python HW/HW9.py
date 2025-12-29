@@ -22,7 +22,7 @@ print(dict_frequency)
 for i in range(roll_dice):
         rolling_result = roll_dice()
         dict_frequency[rolling_result]+=1
- return dict_frequency
+return dict_frequency
 
 print(main())
 
